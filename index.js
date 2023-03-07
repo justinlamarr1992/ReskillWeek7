@@ -14,7 +14,10 @@ const server = http
     // res.end();
     if (url === "/") {
       res.write("Welcome to the Home Page");
-      //   res.send(`<img src=assets/welcome.png>`);
+      res.send('/assets/welcome.png"');
+      //   res.send(<img src="/assets/welcome.png" />);
+      //   res.sendFile(`<img src="assets/welcome.png" />`);
+      //   res.sendFile("./assets/welcome.png");
       //   app.use(express.static(__dirname + "/assets"));
       res.end();
     }
